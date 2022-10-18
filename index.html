@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Library</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper flex">
+      <h1 class="header__heading">library</h1>
+      <a href="#" class="header__btn btn">Login</a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <button class="main__btn btn" type="button">+ Add Book</button>
+      <section class="cards__container"></section>
+      <dialog class="modal">
+          <h2 class="modal__heading">Add new book</h2>
+          <form class="modal__form">
+            <input type="text" name="title" id="title" placeholder="Title" required>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+            <input type="number" name="pages" id="pages" placeholder="Pages" min="1" required>
+            <div class="modal__checkbox flex">
+              <label for="read">Have you read it?</label>
+              <input type="checkbox" id="read">
+            </div>
+            <button type="submit" class="modal__btn btn">Submit</button>
+          </form>
+      </dialog>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
